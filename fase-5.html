@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 5 - Um pedido estranho para Antônio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body-fase5">
+
+    <!-- Enredo da Fase e Botão para Iniciar Perguntas -->
+    <div id="story-screen">
+        <h2>Fase 5 - Um pedido estranho para Antônio</h2>
+        <p> Antônio gosta muito de jogar no computador, e jogando ele acabou fazendo um amigo. Esse amigo mandava mensagem dizendo que queria lhe ver,
+             prometia presentes e chocolates. Um dia ele pediu pro Antônio mandar uma foto do seu corpo sem roupa. Antônio achou estranho e contou para 
+             o seu pai, que ficou desconfiado e ligou para a polícia.
+        </p>
+        <button onclick="showQuestions()">Ir para as Perguntas</button>
+    </div>
+
+    <!-- Tela de Perguntas -->
+    <div id="fase2-screen" style="display: none;">
+        <main>
+            <div id="question-container">
+                <p id="question">Carregando pergunta...</p>
+            </div>
+            <div id="choices">
+                <button onclick="checkAnswer(true)">Certo</button>
+                <button onclick="checkAnswer(false)">Errado</button>
+            </div>
+            <p id="feedback"></p>
+        </main>
+    </div>
+
+    <!-- Tela de Feedback Correto -->
+    <div id="correct-feedback" style="display: none;">
+        <h3>Correto!</h3>
+        <p id="correct-feedback-text"></p>
+        <button onclick="goToNext()">Próxima</button>
+    </div>
+
+    <!-- Tela de Feedback Incorreto -->
+    <div id="incorrect-feedback" style="display: none;">
+        <h3>Incorreto.</h3>
+        <p id="incorrect-feedback-text"></p>
+        <button onclick="goToNext()">Tentar Próxima</button>
+    </div>
+
+
+    <script src="jsfase-5.js"></script>
+</body>
+
+</html>

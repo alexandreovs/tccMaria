@@ -1,0 +1,18 @@
+[
+    {
+        "text": " É certo ou errado o professor fazer perguntas sobre o corpo de Maria que a deixam desconfortável?",
+        "correct": false,
+        "feedback": "Um adulto fazer perguntas assim para uma criança não é normal e se chama abuso sexual. Quando alguém faz perguntas sobre o seu corpo que te deixam sem jeito, fale com alguém da sua confiança."
+    },
+    {
+        "text": "Maria sente que algo está errado, ela deve confiar no que está sentindo e buscar ajuda?",
+        "correct": true,
+        "feedback": "Os seus sentimentos são importantes e sempre que você sentir que algo não está certo, deve buscar ajuda. Você pode buscar ajuda com os seus pais ou parentes, com outros professores, com o diretor, e você pode ligar para o Disque 100 ou para a polícia."
+    },
+    {
+        "text": "Se um professor ou adulto fizer perguntas que nos deixam confusos, precisamos responder para sermos educados.",
+        "correct": false,
+        "feedback": "Você tem o direito de dizer 'não' quando algo não te faz bem, e isso não é falta de educação, é só você cuidando dos seus sentimentos."
+    }
+]
+
