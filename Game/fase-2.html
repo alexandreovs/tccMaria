@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2 - Os Sentimentos de Maria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body-fase2">
+
+    <!-- Enredo da Fase e Botão para Iniciar Perguntas -->
+    <div id="story-screen">
+        <h2>Fase 2 - Os Sentimentos de Maria</h2>
+        <p>Maria está se sentindo triste com uma situação que aconteceu dentro da escola. Como ela é criativa, adora desenhar e costuma ficar na sala de artes
+             durante o recreio, num certo dia, um professor se aproximou elogiando seus desenhos. Porém, também faz perguntas que deixam Maria desconfortável e
+              assustada, como “Posso te ajudar a desenhar seu corpo?” “Você já se desenhou sem roupa?” “Você me desenharia sem roupa?”. Maria se sente confusa 
+              pois gosta dos elogios aos seus desenhos, mas ela sente que algo está errado.</p>
+        <button onclick="showQuestions()">Ir para as Perguntas</button>
+    </div>
+
+    <!-- Tela de Perguntas -->
+    <div id="fase2-screen" style="display: none;">
+        <main>
+            <div id="question-container">
+                <p id="question">Carregando pergunta...</p>
+            </div>
+            <div id="choices">
+                <button onclick="checkAnswer(true)">Certo</button>
+                <button onclick="checkAnswer(false)">Errado</button>
+            </div>
+            <p id="feedback"></p>
+        </main>
+    </div>
+
+    <!-- Tela de Feedback Correto -->
+    <div id="correct-feedback" style="display: none;">
+        <h3>Correto!</h3>
+        <p id="correct-feedback-text"></p>
+        <button onclick="goToNext()">Próxima</button>
+    </div>
+
+    <!-- Tela de Feedback Incorreto -->
+    <div id="incorrect-feedback" style="display: none;">
+        <h3>Incorreto.</h3>
+        <p id="incorrect-feedback-text"></p>
+        <button onclick="goToNext()">Tentar Próxima</button>
+    </div>
+
+
+    <script src="jsfase-2.js"></script>
+</body>
+
+</html>

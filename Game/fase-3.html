@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 3 - João e os limites que devem ser respeitados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="body-fase3">
+
+    <!-- Enredo da Fase e Botão para Iniciar Perguntas -->
+    <div id="story-screen">
+        <h2>Fase 3 - João e os limites que devem ser respeitados</h2>
+        <p> João gosta de brincar de esconde-esconde com seus amigos do bairro. Em uma das brincadeiras, um amigo mais velho sugeriu participar também,
+             mas com uma nova regra, chamada "toque e corre". Nesta regra, quem é encontrado deve deixar o amigo tocar em qualquer parte do seu corpo antes
+              de poder fugir. João foi encontrado e seu amigo tocou na sua parte íntima, mesmo achando estranho, João ficou calado porque ficou com medo de parecer chato.
+        </p>
+        <button onclick="showQuestions()">Ir para as Perguntas</button>
+    </div>
+
+    <!-- Tela de Perguntas -->
+    <div id="fase2-screen" style="display: none;">
+        <main>
+            <div id="question-container">
+                <p id="question">Carregando pergunta...</p>
+            </div>
+            <div id="choices">
+                <button onclick="checkAnswer(true)">Certo</button>
+                <button onclick="checkAnswer(false)">Errado</button>
+            </div>
+            <p id="feedback"></p>
+        </main>
+    </div>
+
+    <!-- Tela de Feedback Correto -->
+    <div id="correct-feedback" style="display: none;">
+        <h3>Correto!</h3>
+        <p id="correct-feedback-text"></p>
+        <button onclick="goToNext()">Próxima</button>
+    </div>
+
+    <!-- Tela de Feedback Incorreto -->
+    <div id="incorrect-feedback" style="display: none;">
+        <h3>Incorreto.</h3>
+        <p id="incorrect-feedback-text"></p>
+        <button onclick="goToNext()">Tentar Próxima</button>
+    </div>
+
+
+    <script src="jsfase-3.js"></script>
+</body>
+
+</html>
