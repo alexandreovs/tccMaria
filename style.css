@@ -16,6 +16,7 @@
 
 #body-fase1{
     font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
     display: flex;
@@ -31,6 +32,7 @@
 
 #body-fase2{
     font-family: Arial, sans-serif;
+    text-align: justify;
     margin: 0;
     padding: 0;
     display: flex;
@@ -46,6 +48,7 @@
 
 #body-fase3{
     font-family: Arial, sans-serif;
+    text-align: justify;
     margin: 0;
     padding: 0;
     display: flex;
@@ -61,6 +64,7 @@
 
 #body-fase4{
     font-family: Arial, sans-serif;
+    text-align: justify;
     margin: 0;
     padding: 0;
     display: flex;
@@ -76,6 +80,7 @@
 
 #body-fase5{
     font-family: Arial, sans-serif;
+    text-align: justify;
     margin: 0;
     padding: 0;
     display: flex;
@@ -91,7 +96,7 @@
 
 #body-fase6{
     font-family: Arial, sans-serif;
-    text-align: center;
+    text-align: justify;
     margin: 0;
     padding: 0;
     display: flex;
@@ -126,6 +131,7 @@ h1, h2 {
 
 /* Background específico para cada fase */
 #fase2-screen {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
